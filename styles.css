@@ -5,6 +5,7 @@
 }
 
 body{
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
@@ -14,13 +15,32 @@ body{
   grid-row: 1 / 3;
   background-color: lightblue;
 
-  
+  display: grid;
+  grid-template-rows: 2fr 10fr 7fr;
 }
 
 .header{
+  display: grid; 
+  grid-template-columns: 4fr 1fr 1fr;
+  align-items: center;
+}
 
+.header-buttons{
+  grid-column: span 2;
+  justify-self: center;
 }
 
 main{
   background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
+
+main > div > div, main > div > ul{
+  background-color: white;
+}
+
+.projects{
+  grid-row: 1 / 3;
+}
+
