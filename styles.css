@@ -7,7 +7,7 @@
 body{
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
   font-family: sans-serif;
 }
@@ -56,6 +56,29 @@ main > div > div, main > div > ul{
   position: absolute;
   top: 30px;
   left: 30px;
+  font-weight: bold;
+}
+
+.card{
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.card h5{
+  align-self: end;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.card div{
+  align-self: center;
+  justify-self: end;
+}
+
+.interact-project button{
+  padding: 10px;
+  margin: 0 10px;
 }
 
 .announcements{
@@ -87,4 +110,20 @@ main > div > div, main > div > ul{
   border-bottom: 1px solid rgba(0, 0, 0, 0.329);
   margin-bottom: 1em;
   padding-bottom: 1em;
+}
+
+.trending{
+  padding: 0 60px 60px 0;
+  
+}
+
+.trending ul{
+  padding: 30px 30px 10px;
+  
+}
+
+.project{
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: block;
 }
